@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Buttons</title>
+</head>
+<body>
+    <button onclick="createButtons()">Create Buttons</button>
+    <div id="buttonContainer"></div>
+
+    <script>
+        function createButtons() {
+            const buttonColors = ['red', 'green', 'yellow'];
+            const container = document.getElementById('buttonContainer');
+
+        
+            container.innerHTML = '';
+
+            buttonColors.forEach(color => {
+                const button = document.createElement('button');
+                button.textContent = color.charAt(0).toUpperCase() + color.slice(1);
+                button.style.backgroundColor = color;
+                button.style.color = 'white'; 
+                button.style.margin = '5px';
+                
+                
+                button.onclick = function() {
+                    document.body.style.backgroundColor = color;
+                };
+
+                container.appendChild(button);
+            });
+        }
+    </script>
+</body>
+</html>
