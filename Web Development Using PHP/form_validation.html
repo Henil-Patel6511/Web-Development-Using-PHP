@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>Form Validation</title>
+    </head>
+<body>
+    <form name="record" method="POST">
+        <table border="0px" background-color="red" align="center">
+            <tr>
+                <td colspan="2" align="center"><u>Registration Form</u></td>
+            </tr>
+
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" id="firstname" name="firstname"/></td>
+            </tr>
+
+            <tr>
+                <td>Last Name:</td>
+                <td><input type="text" id="lastname" name="lastname"/></td>
+            </tr>
+
+            <tr>
+                <td>Enter Your Address:</td>
+                <td><textarea rows="2" cols="20"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" id="email" name="email"/></td>
+            </tr>
+
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" id="password" name="password"/></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="gender" name="gender" value="male"/>Male
+                    <input type="radio" id="gender" name="gender" value=""/>Female
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobby:</td>
+                <td>
+                    <input type="checkbox" id="cricket" name="cricket" value="cricket"/>Cricket
+                    <input type="checkbox" id="football" name="football" value="football"/>Football
+                    <input type="checkbox" id="hockey" name="hockey" value="hockey"/>Hockey
+                </td>
+            </tr>
+
+            <tr>
+                <td>City:</td>
+                <td>
+                    <select id="city" name="city">
+                        <option>--Select City--</option>
+                        <option value="New York">New York</option>
+                        <option value="Los Angeles">Los Angeles</option>
+                        <option value="Chicago">Chicago</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>File:</td>
+                <td>
+                    <input type="file" name="file">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Submit Query">
+                    <input type="reset" value="Cancel">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
